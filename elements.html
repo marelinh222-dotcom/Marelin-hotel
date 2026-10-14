@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hoteles en San Pedro Sula | Honduras</title>
+	<!-- Estilos integrados para garantizar carga inmediata -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #f8f9fa;
+			color: #333;
+		}
+		.hero-section {
+			background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 100px 0;
+			text-align: center;
+		}
+		.card-hotel {
+			transition: transform 0.3s;
+			border: none;
+			box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		}
+		.card-hotel:hover {
+			transform: translateY(-5px);
+		}
+		footer {
+			background-color: #1a1a1a;
+			color: white;
+			padding: 30px 0;
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><i class="fas fa-hotel text-warning"></i> SPS Hoteles</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#hoteles">Hoteles</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<header class="hero-section">
+		<div class="container">
+			<span class="badge bg-warning text-dark mb-2 fs-6">San Pedro Sula, Honduras</span>
+			<h1 class="display-4 fw-bold">Descubre los Mejores Hoteles</h1>
+			<p class="lead">Comodidad, lujo y la mejor hospitalidad en la Capital Industrial.</p>
+		</div>
+	</header>
+
+	<!-- Información General -->
+	<section class="container my-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 text-center">
+				<h2 class="mb-3">Bienvenidos al Valle de Sula</h2>
+				<p class="text-muted">
+					San Pedro Sula ofrece una infraestructura hotelera moderna de primer nivel. Ya sea por negocios o turismo, los hoteles de la ciudad garantizan estancias seguras, céntricas y con servicios de alta calidad respaldados por cadenas internacionales y prestigios locales.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección de Hoteles (Tarjetas) -->
+	<section id="hoteles" class="container my-5">
+		<h2 class="text-center mb-4">Hoteles Destacados en San Pedro Sula</h2>
+		<div class="row g-4">
+			<div class="col-md-4">
+				<div class="card card-hotel h-100">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Hotel Copantl</h5>
+						<h6 class="text-muted mb-3"><i class="fas fa-star text-warning"></i> 5 Estrellas</h6>
+						<p class="card-text">Emblemático complejo con centro de convenciones, amplias piscinas y una ubicación privilegiada en la zona viva de la ciudad.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-hotel h-100">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Real InterContinental</h5>
+						<h6 class="text-muted mb-3"><i class="fas fa-star text-warning"></i> 5 Estrellas</h6>
+						<p class="card-text">Elegancia y sofisticación en el corazón financiero, con restaurantes exclusivos, spa y salones ejecutivos.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-hotel h-100">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Hilton Princess</h5>
+						<h6 class="text-muted mb-3"><i class="fas fa-star text-warning"></i> 5 Estrellas</h6>
+						<p class="card-text">Servicio de clase mundial, excelente gastronomía y confort ideal tanto para viajeros corporativos como vacacionales.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Formulario de Contacto / Reservas -->
+	<section id="contacto" class="container my-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 bg-white p-5 rounded shadow-sm">
+				<h3 class="text-center mb-4">Solicita Información o Reserva</h3>
+				<form>
+					<div class="mb-3">
+						<label class="form-label">Nombre Completo</label>
+						<input type="text" class="form-control" placeholder="Tu nombre" required>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">Correo Electrónico</label>
+						<input type="email" class="form-control" placeholder="tu@correo.com" required>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">Hotel de Interés</label>
+						<select class="form-select">
+							<option>Hotel Copantl</option>
+							<option>Real InterContinental</option>
+							<option>Hilton Princess</option>
+							<option>Hyatt Place</option>
+						</select>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">Mensaje / Comentarios</label>
+						<textarea class="form-control" rows="4" placeholder="Escribe los detalles de tu estancia..."></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary w-100 py-2">Enviar Solicitud</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2026 Guía de Hoteles en San Pedro Sula, Honduras. Todos los derechos reservados.</p>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
